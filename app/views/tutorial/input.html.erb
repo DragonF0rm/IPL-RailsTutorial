@@ -1,0 +1,15 @@
+<%= form_tag url_for(controller: 'tutorial', action: 'task'), method: 'get' do %>
+
+  <%= label_tag :text, 'Текст' %>
+  <%= text_area_tag :text %>
+
+  <br>
+
+  <%= label_tag :word, 'Искомое слово' %>
+  <%= text_field_tag :word%>
+
+  <br>
+
+  <%= submit_tag 'Поехали!' %>
+
+<% end %>
